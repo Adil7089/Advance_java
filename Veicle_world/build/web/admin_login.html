@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+         body{
+                background-color: turquoise
+            }
+            table{
+                font-size: 30px;
+            }
+            td{
+                color:beige
+            }
+            h1{
+               font-weight: bold;
+               text-transform: capitalize; 
+            }
+            a{
+                font-size: 34px;
+            }
+        </style>
+        
+<!--       <script>
+          function valid()
+          {
+        pwd1=document.getElementById("pwd1").value;    
+        pwd2=document.getElementById("pwd2").value;    
+            if(pwd1==pwd2)
+            {
+              return true;  
+            }
+            else
+            {
+                document.getElementById("one").innerHTML="password and confirm password not match";
+              return false;  
+            }
+    }
+         
+            </script> -->
+    </head>
+    <body>
+        <center>
+        <h2> Admin_Login form</h2>
+             <form action="admin_home.jsp" method="post">
+        <table border="2">
+            <tr>
+                <td><label>email_id</label></td>
+                <td><input type="email" name="email_id" placeholder="Enter email_id" required=></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" name="password" id="pwd1" placeholder="Enter password" required=></td>
+            </tr>
+<!--            <tr>
+                <td><label>Confirm_Password</label></td>
+                <td><input type="password" name="password" id="pwd2" placeholder="Enter confirm password" required></td>
+            <tr><span id="one" style="color: red"></span></tr>
+            </tr>-->
+            <tr>
+                <td colspan="2" ><input type="submit" value="Login" onclick="return valid()">
+                    <input type="reset" value="Reset" ></td>
+            </tr>
+            
+        </table>
+            </form>
+        <a href="forgetpassword.html">forget_password</a>
+    </center>
+    </body>
+</html>

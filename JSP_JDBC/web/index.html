@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: turquoise
+            }
+            table{
+                font-size: 30px;
+            }
+            td{
+                color:beige
+            }
+            h1{
+               font-weight: bold;
+               text-transform: capitalize; 
+            }
+            a{
+                font-size: 34px;
+            }
+            
+          </style>
+    </head>
+    <body>
+    <center>
+        <h1>Result data information</h1>
+        <form action="insert.jsp" method="get">
+        <table border="2">
+            <tr>
+                <td><label>Name</label></td>
+                <td><input type="text" name="n" placeholder="Enter name"></td>
+            </tr>
+            <tr>
+                <td><label>RollNo.</label></td>
+                <td><input type="text" name="roll" placeholder="Enter Roll Number"></td>
+            </tr>
+            <tr>
+                <td><label>Percentage</label></td>
+                <td><input type="text" name="per" placeholder="Enter percentage"></td>
+            </tr>
+            <tr>
+                <td colspan="2" ><input type=submit value="Submit">
+                <input type=reset value="Reset"></td>
+            </tr>
+        </table>
+            </form>
+    </center>
+
+    <a href="fetch.jsp">show database</a>
+    </body>
+</html>
